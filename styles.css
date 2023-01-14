@@ -1,0 +1,68 @@
+*{
+font-family: "Bradley Hand", cursive;
+margin: 0;
+}
+@keyframes fade{
+    0%{
+        rotate: 10deg;
+        width: 90%;
+        margin-top: 8%;
+
+    }
+    100%{
+        rotate: -10deg;
+        width: 80%;
+        margin-top: 25%;
+    }
+}
+body{
+    background-image: url(images/noise.png);
+    background-size: 400px;
+}
+#hole{
+margin-top: 20%;
+height: 20%;
+}
+#title{
+    margin-left: 30%;
+    margin-top: 20vh;
+    background-color: rgb(162, 81, 38);
+    padding: 1%;
+}
+#thumb{
+visibility: hidden;
+position: static;
+margin-left: 20%;
+}
+.button{
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    
+}
+#thumb:target{
+    visibility: visible;
+    animation: fade 1.5s infinite;
+    animation-direction: alternate;
+}
+#box{
+    overflow: hidden;
+    height: 30vw;
+    width: 45vw;
+    background-image: url(images/hole.jpg);
+    background-size:cover;
+    margin-top: 10vh;
+    margin-left: 5%;
+    border-radius: 10px;
+    border-style: ridge;
+    display: inline-block;
+}
+.head{
+    width: 100%;
+    background-color:dimgrey;
+    height: 100px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 2vw;
+}
